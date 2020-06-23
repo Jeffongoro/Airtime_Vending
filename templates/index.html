@@ -1,23 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-{% extends 'base.html' %}
-
-{% block head %}
-<title>Airtime Vending System</title>
-{% endblock %}
-
-{% block body %}
-<body class="body">
-  <div class="container">
-      <div class="login">
-        <h3 class="text">Airtime Vending Service</h3>
-        <form method="post" action="">
-          <p><input type="text" name="phone_number" value="" placeholder="Enter Phone Number +254"></p>
-          <p><input type="text" name="amount" value="" placeholder="Enter Amount"></p>
-          <p class="submit"><input type="submit" name="commit" value="Top Up"></p>
-        </form>
-      </div>
-    </div>
-  </body>
-{% endblock %}
-</html>
+{% extends "base.html" %}
+    {% block head %}
+    <title>Airtime Vending System</title>
+    {% endblock head %}
+        {% block content %}
+          <body class="body">
+            <div class="container">
+              <div class="login">
+                <h3 class="text">Airtime Vending Service</h3>
+                <form method="post" action="">
+                <p><input type="text" name="phone_number" value="" placeholder="Enter Phone Number +254"></p>
+                <p><input type="text" name="amount" value="" placeholder="Enter Amount"></p>
+                </p>
+                <p class="submit"><input type="submit" name="commit" value="Top Up"></p>
+                </form>
+                </div>
+            </div>
+          </body>
+        {% endblock content %}
